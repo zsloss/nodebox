@@ -18,7 +18,11 @@ npm config set prefix '~/npm-global'
 echo 'export PATH=~/npm-global/bin:$PATH' >> ~/.profile
 source ~/.profile
 
-mkdir -p ~/.vim/bundle
+# Install Pathogen for Vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# Install Vim plugins via Pathogen
 cd ~/.vim/bundle
 git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/pangloss/vim-javascript.git
