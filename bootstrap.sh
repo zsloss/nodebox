@@ -27,3 +27,5 @@ cd ~/.vim/bundle
 git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone git://github.com/wavded/vim-stylus.git
+
+sudo reboot
